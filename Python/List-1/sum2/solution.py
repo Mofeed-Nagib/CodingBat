@@ -1,2 +1,7 @@
 def sum2(nums):
-    return sum(nums[:2])
+    if len(nums) > 1:
+        return nums[0] + nums[1] 
+    elif len(nums) == 1:
+        return nums[0]
+    else:
+        return 0
