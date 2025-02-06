@@ -1,5 +1,2 @@
 def double_char(str):
-    new = ""
-    for i in str:
-        new += i * 2
-    return new
+    return "".join(char * 2 for char in str)
