@@ -2,11 +2,11 @@ public int scoresSpecial(int[] a, int[] b) {
     return findSpecial(a) + findSpecial(b);
 }
 
-public int findSpecial(int[] array) {
+public int findSpecial(int[] nums) {
     int max = 0;
-    for (int i = 0; i < array.length; i++) {
-        if (array[i] % 10 == 0 && array[i] > max) {
-            max = array[i];
+    for (int num : nums) {
+        if (num % 10 == 0 && num > max) {
+            max = num;
         }
     }
     return max;
